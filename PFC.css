@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(158, 71, 86);
+    color: rgba(241, 226, 13, 0.9);
+    height : 100vh; 
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh;  */
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.logo {
+    width: 12%;
+    margin-right: 12px;
+    opacity: 0.9;
+}
+
+#contenu,
+#ordi {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+}
+
+#resultat {
+    width:100%;
+    min-height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.images {
+    width: 60px;
+    margin: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    background-color:transparent;
+}
