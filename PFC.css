@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(158, 71, 86);
     color: rgba(241, 226, 13, 0.9);
     height : 100vh; 
+    overflow: hidden;
 }
 
 #page {
@@ -9,6 +14,7 @@ body {
     flex-wrap: wrap;
     /* height: 100vh;  */
 }
+
 
 .top {
     width: 100%;
@@ -37,11 +43,13 @@ body {
 }
 
 #resultat {
-    width:100%;
     min-height:80px;
     display:flex;
     align-items: center;
     justify-content: center; 
+    position: absolute;
+    bottom: 31%;
+    left: 44.5%;
 }
 
 .images {
@@ -55,4 +63,9 @@ button:hover {
 
 button {
     background-color:transparent;
+}
+
+button:active,
+button:focus {
+    background-color:cadetblue;
 }
