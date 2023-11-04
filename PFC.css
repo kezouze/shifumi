@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary : rgba(241, 226, 13, 0.9);
 }
 
 body {
@@ -9,52 +15,40 @@ body {
     overflow: hidden;
 }
 
-#page {
-    display: flex;
-    flex-wrap: wrap;
-    /* height: 100vh;  */
-}
-
-
 .top {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items:center;
+    justify-content: center;
 }
 
 .logo {
-    width: 12%;
+    width: 200px;
     margin-right: 12px;
     opacity: 0.9;
 }
-
-#contenu,
-#ordi {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-    height: auto;
+#contenu, #counters, #resultat {
     display: flex;
-    flex-direction: column;
+    width : 100%;
+    height: auto;
+    justify-content: space-around;
     align-items: center;
-    justify-content:baseline;
 }
 
-#resultat {
-    min-height:80px;
-    display:flex;
-    align-items: center;
-    justify-content: center; 
-    position: absolute;
-    bottom: 31%;
-    left: 44.5%;
+#counters {
+    position:absolute;
+    bottom: 0;
 }
 
-.images {
+#joueur,
+#ordi {
+    height: auto;
+}
+
+.images, #choiceOrdi {
     width: 60px;
-    margin: 20px;
+    height: 60px;
 }
 
 button:hover {
@@ -63,9 +57,11 @@ button:hover {
 
 button {
     background-color:transparent;
+    border-radius: 50%;
+    border: 2px solid var(--primary); 
 }
 
 button:active,
 button:focus {
-    background-color:cadetblue;
+    background-color:var(--primary);
 }

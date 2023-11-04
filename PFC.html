@@ -14,36 +14,31 @@
   <!-- Utiliser la propriété element.innerHTML couplée avec les outils getElementById()
        ou getElementByClassName() pour réaliser des changements sur la page en fonction
        des choix de l'utilisateur et de l'ordinateur -->
-
-  <div id="page">
-
     <div class="top">
-      <h1>SHIFUMI</h1>
       <img src="./icones/icone.png" alt="Pierre-Feuille-Ciseaux" class="logo">
+      <h1>SHIFUMI</h1>
     </div>
 
     <div id="contenu">
-      <h2>Votre choix :</h2>
-      <button><img class="images" src="./icones/pierre.png" onclick="test(0);"></button>
-      <button><img class="images" src="./icones/feuille.png" onclick="test(1);"></button>
-      <button><img class="images" src="./icones/ciseaux.png" onclick="test(2);"></button>
-    </div>
-
-    <div id="ordi">
-      <h2>Choix de l'ordinateur :</h2>
-      <div id="choiceOrdi">
+      <div id="joueur">
+        <h2>Votre choix</h2>
+        <button><img class="images" src="./icones/pierre.png" onclick="test(0);"></button>
+        <button><img class="images" src="./icones/feuille.png" onclick="test(1);"></button>
+        <button><img class="images" src="./icones/ciseaux.png" onclick="test(2);"></button>
+      </div>
+      
+      <div id="ordi">
+        <h2>Choix de l'ordinateur</h2>
+        <div id="choiceOrdi">
+        </div>
       </div>
     </div>
-
-    <div id="resultat">
-    </div>
+    <div id="resultat"></div>
     <div id="counters">
+      <h2>Stats</h2>
       <p>Nombre de victoire : <span id="victory">0</span></p>
       <p>Nombre de défaite : <span id="defeat">0</span></p>
       <p>Nombre d'égalité : <span id="equal">0</span></p>
     </div>
-
-  </div>
-
 </body>
 </html>
