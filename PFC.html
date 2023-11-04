@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Pierre-Feuille-Ciseaux</title>
+  <title>Shifumi</title>
   <link rel="shortcut icon" href="./icones/icone.png" type="image/x-icon">
   <link href="PFC.css" rel="stylesheet">
   <script src="PFC.js"></script>
@@ -16,7 +16,6 @@
        des choix de l'utilisateur et de l'ordinateur -->
     <div class="top">
       <img src="./icones/icone.png" alt="Pierre-Feuille-Ciseaux" class="logo">
-      <h1>SHIFUMI</h1>
     </div>
 
     <div id="contenu">
@@ -26,19 +25,19 @@
         <button><img class="images" src="./icones/feuille.png" onclick="test(1);"></button>
         <button><img class="images" src="./icones/ciseaux.png" onclick="test(2);"></button>
       </div>
+
+      <div id="resultat"></div>
       
       <div id="ordi">
-        <h2>Choix de l'ordinateur</h2>
+        <h2>Choix de l'IA</h2>
         <div id="choiceOrdi">
         </div>
       </div>
     </div>
-    <div id="resultat"></div>
     <div id="counters">
-      <h2>Stats</h2>
-      <p>Nombre de victoire : <span id="victory">0</span></p>
-      <p>Nombre de défaite : <span id="defeat">0</span></p>
-      <p>Nombre d'égalité : <span id="equal">0</span></p>
+      <p><span id="victory">0</span> victoires</p>
+      <p><span id="defeat">0</span> défaites</p>
+      <p><span id="equal">0</span> égalités</p>
     </div>
 </body>
 </html>

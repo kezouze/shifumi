@@ -21,6 +21,8 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
+    position: absolute;
+    top: 10px;
 }
 
 .logo {
@@ -28,17 +30,25 @@ body {
     margin-right: 12px;
     opacity: 0.9;
 }
-#contenu, #counters, #resultat {
+#contenu {
     display: flex;
     width : 100%;
     height: auto;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+    top:50%;
+    bottom: 50%;
 }
 
 #counters {
+    width : 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     position:absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 #joueur,
@@ -58,7 +68,8 @@ button:hover {
 button {
     background-color:transparent;
     border-radius: 50%;
-    border: 2px solid var(--primary); 
+    border: 2px solid var(--primary);
+    border: none;
 }
 
 button:active,
